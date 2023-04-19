@@ -404,7 +404,7 @@ class HMMNER:
         
         #################################################################################
 
-        return accuracy
+        return predicted_tag_sequences, true_tag_sequences, accuracy
 
     def forward_algorithm(self, sentence):
         prob = 0

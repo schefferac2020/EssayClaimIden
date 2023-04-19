@@ -34,6 +34,9 @@ class NERDataset(Dataset):
                              truncation=True, 
                              max_length=self.max_len)
         word_ids = encoding.word_ids()  
+        print("encoding", encoding)
+        #print(word_ids)
+        #print(len(word_ids))
         
         # CREATE TARGETS
         if not self.get_wids:
